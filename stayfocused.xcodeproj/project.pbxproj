@@ -14,6 +14,11 @@
 		C00592BC2973291100051974 /* stayfocusedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00592BB2973291100051974 /* stayfocusedTests.swift */; };
 		C00592C62973291100051974 /* stayfocusedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00592C52973291100051974 /* stayfocusedUITests.swift */; };
 		C00592C82973291100051974 /* stayfocusedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00592C72973291100051974 /* stayfocusedUITestsLaunchTests.swift */; };
+		C00592D52973293C00051974 /* BlankPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00592D42973293C00051974 /* BlankPage.swift */; };
+		C00592D72973295B00051974 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00592D62973295B00051974 /* Tips.swift */; };
+		C00592D92973297000051974 /* new.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00592D82973297000051974 /* new.swift */; };
+		C00592DD297329C500051974 /* welcome To.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00592DC297329C500051974 /* welcome To.swift */; };
+		C00592DF29732A8700051974 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C00592DE29732A8700051974 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		C00592C12973291100051974 /* stayfocusedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stayfocusedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00592C52973291100051974 /* stayfocusedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stayfocusedUITests.swift; sourceTree = "<group>"; };
 		C00592C72973291100051974 /* stayfocusedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stayfocusedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C00592D42973293C00051974 /* BlankPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankPage.swift; sourceTree = "<group>"; };
+		C00592D62973295B00051974 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
+		C00592D82973297000051974 /* new.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = new.swift; sourceTree = "<group>"; };
+		C00592DC297329C500051974 /* welcome To.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "welcome To.swift"; sourceTree = "<group>"; };
+		C00592DE29732A8700051974 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,7 @@
 		C005929E2973291000051974 = {
 			isa = PBXGroup;
 			children = (
+				C00592DE29732A8700051974 /* Localizable.strings */,
 				C00592A92973291000051974 /* stayfocused */,
 				C00592BA2973291100051974 /* stayfocusedTests */,
 				C00592C42973291100051974 /* stayfocusedUITests */,
@@ -95,9 +106,13 @@
 			isa = PBXGroup;
 			children = (
 				C00592AA2973291000051974 /* stayfocusedApp.swift */,
+				C00592DC297329C500051974 /* welcome To.swift */,
 				C00592AC2973291000051974 /* ContentView.swift */,
 				C00592AE2973291100051974 /* Assets.xcassets */,
 				C00592B02973291100051974 /* Preview Content */,
+				C00592D42973293C00051974 /* BlankPage.swift */,
+				C00592D62973295B00051974 /* Tips.swift */,
+				C00592D82973297000051974 /* new.swift */,
 			);
 			path = stayfocused;
 			sourceTree = "<group>";
@@ -213,6 +228,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = C005929E2973291000051974;
 			productRefGroup = C00592A82973291000051974 /* Products */;
@@ -232,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C00592B22973291100051974 /* Preview Assets.xcassets in Resources */,
+				C00592DF29732A8700051974 /* Localizable.strings in Resources */,
 				C00592AF2973291100051974 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C00592AD2973291000051974 /* ContentView.swift in Sources */,
+				C00592D72973295B00051974 /* Tips.swift in Sources */,
 				C00592AB2973291000051974 /* stayfocusedApp.swift in Sources */,
+				C00592D52973293C00051974 /* BlankPage.swift in Sources */,
+				C00592DD297329C500051974 /* welcome To.swift in Sources */,
+				C00592D92973297000051974 /* new.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
