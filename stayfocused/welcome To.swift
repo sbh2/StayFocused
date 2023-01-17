@@ -11,25 +11,23 @@ struct welcome_To_: View {
 
     var body: some View {
  NavigationView{
-         
+
            ZStack{
                Image("az")
                    .resizable()
                    .aspectRatio(contentMode: .fit)
                    .frame(width:700.0, height:960)
                    .padding(-50)
-               
-               
+
+
                VStack{
-                   
-                   
                    Text("Welcome To")
                        .font(.title)
                        .fontWeight(.bold)
                        .multilineTextAlignment(.center)
                        .padding(.top, -40.0)
                        .foregroundColor(Color(hue: 0.472, saturation: 0.772, brightness: 0.618))
-                       .accessibilityLabel(Text("Welcome To"))
+                    //   .accessibilityLabel(Text("Welcome To"))
                    Text("StayFocus")
                        .font(.title)
                        .fontWeight(.bold)
@@ -37,13 +35,13 @@ struct welcome_To_: View {
                        .foregroundColor(Color.white)
                        .multilineTextAlignment(.center)
                        .padding([.bottom, .trailing], -70.0)
-                       .accessibilityLabel(Text("StayFocus"))
+                     //  .accessibilityLabel(Text("StayFocus"))
                }
-       
+
                        Button{
                            print("s")
                        }label: {
-                           
+
                            NavigationLink(destination: ContentView(), label: {
                                ZStack{
                                    RoundedRectangle (cornerRadius: 12.0)
@@ -61,14 +59,13 @@ struct welcome_To_: View {
                                }
                            })
                        }
-                       
                    }
-                
-            
+
+
   }
     }
         }
-                    
+
 struct welcome_To__Previews: PreviewProvider {
     static var previews: some View {
         welcome_To_()

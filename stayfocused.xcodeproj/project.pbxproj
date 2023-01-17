@@ -18,7 +18,7 @@
 		C00592D72973295B00051974 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00592D62973295B00051974 /* Tips.swift */; };
 		C00592D92973297000051974 /* new.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00592D82973297000051974 /* new.swift */; };
 		C00592DD297329C500051974 /* welcome To.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00592DC297329C500051974 /* welcome To.swift */; };
-		C00592DF29732A8700051974 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C00592DE29732A8700051974 /* Localizable.strings */; };
+		C00592E029733D7E00051974 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C00592E229733D7E00051974 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,8 @@
 		C00592D62973295B00051974 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
 		C00592D82973297000051974 /* new.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = new.swift; sourceTree = "<group>"; };
 		C00592DC297329C500051974 /* welcome To.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "welcome To.swift"; sourceTree = "<group>"; };
-		C00592DE29732A8700051974 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C00592E129733D7E00051974 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C00592E329733D8200051974 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +85,7 @@
 		C005929E2973291000051974 = {
 			isa = PBXGroup;
 			children = (
-				C00592DE29732A8700051974 /* Localizable.strings */,
+				C00592E229733D7E00051974 /* Localizable.strings */,
 				C00592A92973291000051974 /* stayfocused */,
 				C00592BA2973291100051974 /* stayfocusedTests */,
 				C00592C42973291100051974 /* stayfocusedUITests */,
@@ -248,7 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C00592B22973291100051974 /* Preview Assets.xcassets in Resources */,
-				C00592DF29732A8700051974 /* Localizable.strings in Resources */,
+				C00592E029733D7E00051974 /* Localizable.strings in Resources */,
 				C00592AF2973291100051974 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +316,18 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		C00592E229733D7E00051974 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C00592E129733D7E00051974 /* en */,
+				C00592E329733D8200051974 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		C00592C92973291100051974 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -366,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

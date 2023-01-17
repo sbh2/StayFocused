@@ -27,7 +27,7 @@ struct Tips: View {
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                     .padding(.bottom,678.0)
-                    .accessibilityLabel(Text("Tips"))
+               //     .accessibilityLabel(Text("Tips"))
                 
                 
                 ZStack {
@@ -49,7 +49,7 @@ struct Tips: View {
                         .lineLimit(nil)
                         .padding(.top, -200.0)
                         .padding(.trailing, -5.0)
-                        .accessibilityLabel(Text("Don't Put Off Today's Work                           Until Tomorrow"))
+                     //   .accessibilityLabel(Text("Don't Put Off Today's Work                           Until Tomorrow"))
                 }
                 
         
@@ -71,7 +71,7 @@ struct Tips: View {
                         .multilineTextAlignment(.center)
                         .lineLimit(nil)
                         .padding(.top, -107.0)
-                        .accessibilityLabel(Text("Focus Only On The Work"))
+                     //   .accessibilityLabel(Text("Focus Only On The Work"))
                 }
                 ZStack {
                     
@@ -89,7 +89,7 @@ struct Tips: View {
                         .multilineTextAlignment(.center)
                         .lineLimit(nil)
                         .padding(.bottom, 30.0)
-                        .accessibilityLabel(Text("Make Sure To Drink Water"))
+                     //   .accessibilityLabel(Text("Make Sure To Drink Water"))
                     
                 }
             }

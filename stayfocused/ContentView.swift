@@ -32,94 +32,96 @@ struct ContentView: View {
                     .ignoresSafeArea()
                     .padding(.top, -30)
                     .padding(.top, 1.0)
-                ZStack{
-                    RoundedRectangle(cornerRadius: 60)
-                        .foregroundColor(.white)
-                        .padding(.bottom, 50)
-                        .padding(.top, 50)
-                        .padding(.horizontal, 30)
-                    
-                    ZStack(alignment: .center){
-                        Circle()
-                            .trim(from: 0, to: 55)
-                            .stroke(Color.black.opacity(0.30), style: StrokeStyle(lineWidth:10, lineCap: .round))
-                            .frame (width: 250, height: 245)
+                VStack{
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 60)
+                            .foregroundColor(.white)
+                            .padding(.bottom, 50)
+                            .padding(.top, 50)
+                            .padding(.horizontal, 30)
                         
-                        Circle()
-                            .trim(from: 0, to: self.to)
-                            .stroke(Color(red: 0.982, green: 0.598, blue: 0.252), style: StrokeStyle(lineWidth:10, lineCap: .round))
-                            .frame (width: 250, height: 245)
-                    }
-                    .rotationEffect(.init(degrees: -90))
-                    
-                    Button {
-                        print("s")}
-                label: {
-        
-                 NavigationLink(destination: new(isVoiceOverPressed: false),
-                   // NavigationLink(destination: Tips(),
-                         label: {
-                                        
-                     ZStack(alignment: .center){
-                            RoundedRectangle(cornerRadius: 12.0)
-                                .frame(width: 140, height: 50)
-                                .foregroundColor(Color(red:0.947, green: 0.7, blue: 0.39))
-                                .padding(.top, 600)
-                                .padding(.trailing, 20.0)
-                                
-                                .accessibilityLabel("Goals")
-                                .accessibilityAction {
-                                    isVoiceOverPressed = true
-                                }
+                        ZStack(alignment: .center){
+                            Circle()
+                                .trim(from: 0, to: 55)
+                                .stroke(Color.black.opacity(0.30), style: StrokeStyle(lineWidth:10, lineCap: .round))
+                                .frame (width: 250, height: 245)
                             
-                            Text("Goals")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .foregroundColor(Color.white)
-                                .multilineTextAlignment(.center)
-                                .padding(.top,600)
-                              
-                            }
-                       
-                    })
-                    
-                     }
-                    VStack{
-                        Text(ConvertSecondsToTime(timeInSeconds: TimeRemaining))
-                            .font(.system(size: 60))
-                            .fontWeight(.bold)
-                            .foregroundColor(Color(red: 0.978, green: 0.602, blue: 0.252))
-                        HStack(spacing: 15){
-                            Button(action:{
-                                if self.TimeRemaining == 1500{
-                                    self.TimeRemaining = 1500
-                                    withAnimation(.default){
-                                        self.to = 0
-                                    }
-                                }
-                                self.Start.toggle()
-                            })
-                            {
-                                Image(systemName: self.Start ?  "pause" : "play")
-                                    .frame(width: 34, height: 48)
-                                    .font(.title)
-                                    .foregroundColor(Color(red: 0.982, green: 0.602, blue: 0.252))
-                                  .accessibilityHint("Play")
-                            }
+                            Circle()
+                                .trim(from: 0, to: self.to)
+                                .stroke(Color(red: 0.982, green: 0.598, blue: 0.252), style: StrokeStyle(lineWidth:10, lineCap: .round))
+                                .frame (width: 250, height: 245)
+                            
+                   
                         }
-                                   .padding(.vertical)
-                                   .clipShape(Capsule())
-                       
+                        .rotationEffect(.init(degrees: -90))
+                        
+                        Button {
+                            print("s")}
+                    label: {
+                        
+                        NavigationLink(destination: new(isVoiceOverPressed: false),
+                                       // NavigationLink(destination: Tips(),
+                                       label: {
+                            
+                            ZStack(alignment: .center){
+                                RoundedRectangle(cornerRadius: 12.0)
+                                    .frame(width: 140, height: 50)
+                                    .foregroundColor(Color(red:0.947, green: 0.7, blue: 0.39))
+                                    .padding(.top, 600)
+                                 //   .padding(.trailing, 20.0)
+                                
+                                    .accessibilityLabel("Goals")
+                                    .accessibilityAction {
+                                        isVoiceOverPressed = true
+                                    }
+                               // VStack{
+                                    Text("Goals")
+                                        .font(.title)
+                                        .fontWeight(.bold)
+                                        .foregroundColor(Color.white)
+                                        .multilineTextAlignment(.center)
+                                        .padding(.top,600)
+                             //   }
+                            }
+                            
+                        })
+                        
                     }
-
+                        VStack{
+                            Text(ConvertSecondsToTime(timeInSeconds: TimeRemaining))
+                                .font(.system(size: 60))
+                                .fontWeight(.bold)
+                                .foregroundColor(Color(red: 0.978, green: 0.602, blue: 0.252))
+                            HStack(spacing: 15){
+                                Button(action:{
+                                    if self.TimeRemaining == 1500{
+                                        self.TimeRemaining = 1500
+                                        withAnimation(.default){
+                                            self.to = 0
+                                        }
+                                    }
+                                    self.Start.toggle()
+                                })
+                                {
+                                    Image(systemName: self.Start ?  "pause" : "play")
+                                        .frame(width: 34, height: 48)
+                                        .font(.title)
+                                        .foregroundColor(Color(red: 0.982, green: 0.602, blue: 0.252))
+                                        .accessibilityHint("Play")
+                                }
+                            }
+                         //   .padding(.vertical)
+                            .clipShape(Capsule())
+                            
+                        }
+                        
+                    } //
                 }
-                
                     .toolbar {
                         ToolbarItem(placement: .navigationBarLeading){
                             Button {
                                 print("Done Tapd")
                             } label:{
-                           
                                 NavigationLink(destination: Tips(isVoiceOverPressed: false), label: {
                                 Image(systemName: "lightbulb.circle")
                                     .resizable()
@@ -134,13 +136,6 @@ struct ContentView: View {
                             }
                         }
                    }
-    
-                
-               
-          
-            
-                                
-                
 
                 
                 .onAppear(perform: {
@@ -169,6 +164,7 @@ struct ContentView: View {
             }
 
         }
+        .navigationBarHidden(true)
 }
     
     struct ContentView_Previews: PreviewProvider {
