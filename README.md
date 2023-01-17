@@ -8,14 +8,14 @@ set a time to rest between each work
 
 2. Technologies & Tools
 SwiftUI
-Accessibilty
+Accessibilty: Voice Control
+Localization
 
 3. Demo of your App (1 - 2 minute long)
-https://user-images.githubusercontent.com/116627507/212526069-93fa6012-1b18-4d78-a97e-821d6ceffc28.mp4
-
+https://user-images.githubusercontent.com/116627507/212838902-41ef631f-9f17-40dd-9b9c-95130049c56c.MOV
 
 4. Challenge Summary
-<img width="2560" alt="Helpers" src="https://user-images.githubusercontent.com/116627507/212492619-ca1a23ab-2e45-4084-b5e0-397a213ed9d4.png">
+<img width="1096" alt="Screenshot 1444-06-24 at 10 35 24 AM" src="https://user-images.githubusercontent.com/116627507/212836998-1c5e6e55-7f18-455e-b6f5-b16190830ef3.png">
 
 
 
