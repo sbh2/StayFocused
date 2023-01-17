@@ -126,7 +126,7 @@ struct ContentView: View {
                                 Image(systemName: "lightbulb.circle")
                                     .resizable()
                                     .foregroundColor(Color(hue: 0.081, saturation: 0.459, brightness: 0.949))
-                                    .frame(width: 44, height: 48)
+                                    .frame(width: 40, height: 45)
 //                                    .font(.system(size: 35))
                                     .accessibilityLabel("Tips")
                                     .accessibilityAction {
