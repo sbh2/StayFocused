@@ -2,7 +2,7 @@
 
 1. Big Idea 
 
-After we used CBL, we realized that some people get distracted if they don't organize their time properly and take a break between each work, so we came up with an app that works as a work timer and a place to write down daily goals and tips for the user. The application helps everyone set a time to complete their daily tasks by turning on the timer, allowing time to work and time to rest between work and writing daily goals
+Inclusion
 
 2.Challenge Statement
 
